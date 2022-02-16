@@ -11,7 +11,7 @@
 <body>
 	<h1> ${fs}</h1>  <br>
 	${user}  <br> 
-	${user.name}<br> 
+	${user.name} <br> 
 	${user.gender} <br> 
 
 </body>

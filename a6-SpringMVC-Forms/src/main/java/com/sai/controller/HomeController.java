@@ -48,6 +48,7 @@ public class HomeController {
 		//System.out.println(user);	
 		modelandview.addObject("fs", "Form Submission is Sucessful");
 		
+		
 		return modelandview;
 	}
 
