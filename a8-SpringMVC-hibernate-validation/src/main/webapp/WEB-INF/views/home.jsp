@@ -10,8 +10,8 @@
 <title>Home</title>
 </head>
 <body>
-	<h1>Hello World!</h1>
-	<p>This is the homepage!</p>
+	<h1>Hello World!!!!!</h1>
+	<p>This is the Home Page!</p>
 	<form:form action="displayUserInfo" modelAttribute="user">
 		<form:select path="country">
 			<form:option value="India"></form:option>
