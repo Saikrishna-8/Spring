@@ -15,7 +15,7 @@
 </head>
 <body>
 
-	Hello ${name}
+	Hello. ${name}
 	<br> today'sDate: ${date}
 	<br> LIST OF TEAM MEMBERS
 	<br> _______________________

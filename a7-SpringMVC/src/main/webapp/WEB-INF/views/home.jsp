@@ -11,7 +11,7 @@
 </head>
 <body>
 	<h1>Hello World!</h1>
-	<p>This is the homepage!</p>
+	<p>This is the Home page !!!</p>
 	<form:form action="displayUserInfo" modelAttribute="user">
 		<form:select path="country">
 			<form:option value="India"></form:option>
