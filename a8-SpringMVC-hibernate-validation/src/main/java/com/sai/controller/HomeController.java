@@ -5,8 +5,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletResponse;
-import javax.validation.Valid;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,9 +13,12 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.sai.model.User;
 
+import jakarta.validation.Valid;
+
 @Controller
 public class HomeController {
 
+	//ModelAndView glob_home_mod=null;
 	@GetMapping(value="/")
 	public ModelAndView test(HttpServletResponse response) throws IOException{
 		ModelAndView mod=new ModelAndView("home");
@@ -33,7 +34,7 @@ public class HomeController {
 		selectMap.put("Uk","United Kingdom");
 		
 		mod.addObject("selectMap", selectMap);
-		
+		//glob_home_mod=mod;
 		return mod;
 	}
 	
@@ -45,6 +46,7 @@ public class HomeController {
 		if(result.hasErrors())
 		{
 			System.out.println("Has Errors!");
+			//return glob_home_mod;
 		}
 		return mod;
 	}

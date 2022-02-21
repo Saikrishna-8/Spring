@@ -7,7 +7,7 @@ import org.hibernate.validator.constraints.Range;
 
 public class User {
 	
-	@Size(min=5,max=10)
+	@Size(min=5,max=10,message="Your name should be between 5 - 10 characters.")
 	private String name;
 	
 	private String country,introduction,visitedCountries[];

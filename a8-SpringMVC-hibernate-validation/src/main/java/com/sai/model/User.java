@@ -1,10 +1,10 @@
 package com.sai.model;
 
-import javax.validation.constraints.Size;
+import org.hibernate.validator.constraints.Range;
 
 public class User {
 	
-	@Size(min=5,max=10)
+	@Range(min=5,max=10)
 	private String name;
 	
 	private String country,introduction,visitedCountries[];

@@ -12,6 +12,7 @@
 <body>
 	<h1>Hello World!</h1>
 	<p>This is the Home page !!!</p>
+	<!-- 
 	<form:form action="displayUserInfo" modelAttribute="user">
 		<form:select path="country">
 			<form:option value="India"></form:option>
@@ -20,26 +21,34 @@
 			<form:option value="UK"></form:option>
 			<form:option value="Srilanka"></form:option>
 		</form:select>
+		<br>
+		Name:<form:input path="name" required="true"/>
+		<form:errors path="name"/>
 		<input type="submit" value="submit">
 	</form:form>
+	 -->
+	
+	<br><br>
 
 
 	<form:form action="displayUserInfo" modelAttribute="user">
 	
-		Name: <form:input path="name" required="true"/>
+		Name: <form:input path="name" required="true"/><br><br>
+		<form:errors path="name" cssStyle="color:red"/><br><br>
 		
 		
 		Country :<form:select path="country" items="${selectMap}">
-		</form:select>
+		</form:select><br><br>
 		
 		Introduction: <form:textarea path="introduction" required="true" placeholder="enter something" />
-		<br>
+		<br><br>
 		
 		Visited Countries:
 		CANDA: <form:checkbox path="visitedCountries" value="Canada" />
 		TOKYO: <form:checkbox path="visitedCountries" value="Tokyo" />
 		Germany: <form:checkbox path="visitedCountries" value="Germany" />
 		Ireland: <form:checkbox path="visitedCountries" value="Ireland" />
+		<br><br>
 		<p>
 			Accept Agreement:<form:checkbox path="" value="Accept" required="true" /> 
 		</p>
